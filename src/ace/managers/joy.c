@@ -6,7 +6,6 @@
 #include <ace/managers/log.h>
 #include <ace/utils/custom.h>
 #include <resources/misc.h> // OS-friendly parallel joys: misc.resource
-#include <clib/misc_protos.h> // OS-friendly parallel joys: misc.resource
 
 /* Globals */
 tJoyManager g_sJoyManager;

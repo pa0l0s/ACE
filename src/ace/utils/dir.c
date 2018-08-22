@@ -2,12 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include <ace/utils/dir.h>
 #include <string.h>
+#include <ace/utils/dir.h>
 #include <ace/macros.h>
 #include <ace/managers/system.h>
 #include <ace/managers/memory.h>
 #include <ace/managers/log.h>
+#include <inline/macros.h>
 
 tDir *dirOpen(const char *szPath) {
 	systemUse();

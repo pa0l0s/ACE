@@ -5,9 +5,14 @@
 #include <ace/managers/copper.h>
 #ifdef AMIGA
 #include <stdarg.h>
+#include <limits.h>
+#include <hardware/dmabits.h> // DMAF defines
+#include <graphics/gfxbase.h> // Required for GfxBase
+#include <proto/exec.h>
 #include <ace/managers/system.h>
 #include <ace/utils/tag.h>
-#include <limits.h>
+
+extern struct GfxBase *GfxBase;
 
 tCopManager g_sCopManager;
 

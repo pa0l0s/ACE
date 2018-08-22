@@ -7,7 +7,12 @@
 #include <ace/managers/memory.h>
 #include <ace/managers/system.h>
 #include <ace/utils/custom.h>
+
+#ifdef AMIGA
+#include <exec/interrupts.h>  // struct Interrupt
 #include <hardware/intbits.h> // INTB_PORTS
+#endif // AMIGA
+
 #define KEY_RELEASED_BIT 1
 
 static inline void keyIntSetState(

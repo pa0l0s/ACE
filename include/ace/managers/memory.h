@@ -5,16 +5,13 @@
 #ifndef _ACE_MANAGERS_MEMORY_H_
 #define _ACE_MANAGERS_MEMORY_H_
 
-#ifdef AMIGA
-#include <clib/exec_protos.h> // Amiga typedefs
-#include <exec/memory.h>      // MEMF_CLEAR etc
-#else
+#ifndef MEMF_CHIP
 #define MEMF_CHIP    0
 #define MEMF_FAST    1
 #define MEMF_CLEAR   2
 #define MEMF_PUBLIC  4
 #define MEMF_LARGEST 8
-#endif // AMIGA
+#endif
 
 #include <ace/types.h>
 

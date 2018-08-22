@@ -6,6 +6,12 @@
 #include <ace/managers/log.h>
 #include <ace/managers/system.h>
 
+#ifdef AMIGA
+#include <proto/exec.h> // Amiga typedefs
+#include <exec/interrupts.h>  // struct Interrupt
+#include <hardware/intbits.h> // INTB_VERTB
+#endif // AMIGA
+
 /* Globals */
 tTimerManager g_sTimerManager = {0};
 

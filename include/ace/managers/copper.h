@@ -26,8 +26,8 @@
  */
 
 #ifdef AMIGA
-#include <hardware/dmabits.h> // DMAF defines
 
+#include <hardware/dmabits.h> // Copperlists frequently operate on DMAF_*
 #include <ace/types.h>
 #include <ace/managers/log.h>
 #include <ace/utils/custom.h>

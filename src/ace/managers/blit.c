@@ -2,8 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+
 #include <ace/managers/blit.h>
 #include <ace/managers/system.h>
+#ifdef AMIGA
+#include <hardware/dmabits.h> // DMAF_BLITTER
+#include <hardware/blit.h>
+#endif // AMIGA
 
 #define BLIT_LINE_OR ((ABC | ABNC | NABC | NANBC) | (SRCA | SRCC | DEST))
 #define BLIT_LINE_XOR ((ABNC | NABC | NANBC) | (SRCA | SRCC | DEST))

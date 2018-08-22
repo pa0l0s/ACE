@@ -6,6 +6,7 @@
 #define _ACE_UTILS_BITMAP_H_
 
 #include <ace/types.h>
+#include <proto/graphics.h>
 
 // File has its own 'flags' field - could be used in new ACE bitmap struct
 #define BITMAP_INTERLEAVED 1
@@ -19,7 +20,7 @@
 /* Types */
 
 #ifdef AMIGA
-#include <clib/graphics_protos.h> // BitMap etc
+#include <proto/exec.h> // BitMap etc
 typedef struct BitMap tBitMap;
 #else
 typedef struct _tBitMap {

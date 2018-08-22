@@ -5,7 +5,8 @@
 #include <ace/utils/file.h>
 #include <stdarg.h>
 #include <dos/dos.h>
-#include <clib/dos_protos.h>
+#include <proto/dos.h>
+#include <inline/dos.h>
 #include <ace/managers/system.h>
 #include <ace/managers/log.h>
 

@@ -5,7 +5,6 @@
 #ifndef _ACE_MANAGERS_SYSTEM_H_
 #define _ACE_MANAGERS_SYSTEM_H_
 
-#include <graphics/gfxbase.h> // Required for GfxBase
 #include <ace/types.h>
 #include <ace/utils/custom.h>
 
@@ -42,7 +41,5 @@ void systemSetInt(
 void systemSetDma(UBYTE ubDmaBit, UBYTE isEnabled);
 
 //---------------------------------------------------------------------- GLOBALS
-
-extern struct GfxBase *GfxBase;
 
 #endif // _ACE_MANAGERS_SYSTEM_H_

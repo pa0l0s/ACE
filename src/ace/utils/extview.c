@@ -4,6 +4,7 @@
 
 #include <ace/utils/extview.h>
 #include <limits.h>
+#include <hardware/dmabits.h> // DMAB_RASTER
 #include <ace/managers/system.h>
 #include <ace/utils/tag.h>
 #include <ace/generic/screen.h>

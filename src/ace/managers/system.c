@@ -4,12 +4,16 @@
 
 #include <ace/managers/system.h>
 #include <stdlib.h>
-#include <clib/graphics_protos.h>
+#include <proto/exec.h>
+#include <proto/graphics.h>
 #include <hardware/intbits.h>
 #include <hardware/dmabits.h>
+#include <graphics/gfxbase.h> // Required for GfxBase
 #include <ace/utils/custom.h>
 #include <ace/managers/log.h>
 #include <ace/managers/timer.h>
+
+extern struct GfxBase *GfxBase;
 
 // There are hardware interrupt vectors
 // Some may be triggered by more than one event - there are 15 events

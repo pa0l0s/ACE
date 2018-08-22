@@ -5,6 +5,7 @@
 #include <ace/managers/memory.h>
 #include <ace/managers/system.h>
 #include <ace/utils/file.h>
+#include <proto/exec.h>
 
 /* Globals */
 

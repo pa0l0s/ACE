@@ -6,9 +6,6 @@
 #define _ACE_MANAGERS_KEY_H_
 
 #include <ace/types.h>
-#ifdef AMIGA
-#include <exec/interrupts.h>  // struct Interrupt
-#endif // AMIGA
 
 /* ****************************************************************** DEFINES */
 
